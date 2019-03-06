@@ -16,13 +16,13 @@ check:
 	@go test -v $(shell go list ./... | grep -v '/e2e')
 
 bin/kube-aws-approver: $(GOFILES)
-	@go build $(GOFLAGS) -o $(ROOT_DIR)/bin/kube-aws-approver github.com/coreos/kubecsr/cmd/kube-aws-approver
+	@go build $(GOFLAGS) -o $(ROOT_DIR)/bin/kube-aws-approver github.com/openshift/kubecsr/cmd/kube-aws-approver
 
 bin/kube-etcd-signer-server: $(GOFILES)
-	@go build $(GOFLAGS) -o $(ROOT_DIR)/bin/kube-etcd-signer-server github.com/coreos/kubecsr/cmd/kube-etcd-signer-server
+	@go build $(GOFLAGS) -o $(ROOT_DIR)/bin/kube-etcd-signer-server github.com/openshift/kubecsr/cmd/kube-etcd-signer-server
 
 bin/kube-client-agent: $(GOFILES)
-	@go build $(GOFLAGS) -o $(ROOT_DIR)/bin/kube-client-agent github.com/coreos/kubecsr/cmd/kube-client-agent
+	@go build $(GOFLAGS) -o $(ROOT_DIR)/bin/kube-client-agent github.com/openshift/kubecsr/cmd/kube-client-agent
 
 image/kube-aws-approver:
 	@docker build -t quay.io/coreos/kube-aws-approver:$(IMAGE_TAG) -f $(ROOT_DIR)/dockerfiles/Dockerfile.kube-aws-approver .

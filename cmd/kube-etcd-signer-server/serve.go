@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	signer "github.com/coreos/kubecsr/pkg/certsigner"
+	signer "github.com/openshift/kubecsr/pkg/certsigner"
 	"github.com/spf13/cobra"
 )
 

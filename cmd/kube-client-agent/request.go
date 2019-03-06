@@ -6,7 +6,7 @@ import (
 	"net"
 	"strings"
 
-	agent "github.com/coreos/kubecsr/pkg/certagent"
+	agent "github.com/openshift/kubecsr/pkg/certagent"
 	"github.com/spf13/cobra"
 )
 

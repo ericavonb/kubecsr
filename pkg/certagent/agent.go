@@ -16,7 +16,7 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	certutil "k8s.io/client-go/util/cert"
 
-	"github.com/coreos/kubecsr/pkg/util"
+	"github.com/openshift/kubecsr/pkg/util"
 )
 
 // CSRConfig contains the configuration values required

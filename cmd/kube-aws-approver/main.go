@@ -11,7 +11,7 @@ import (
 	"github.com/golang/glog"
 	"github.com/spf13/cobra"
 
-	awsapprover "github.com/coreos/kubecsr/pkg/approver/aws"
+	awsapprover "github.com/openshift/kubecsr/pkg/approver/aws"
 	"k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/uuid"
